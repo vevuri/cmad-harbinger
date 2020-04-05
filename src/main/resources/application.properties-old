@@ -1,0 +1,14 @@
+spring.jpa.hibernate.ddl-auto=update
+spring.datasource.url=jdbc:mysql://localhost:3306/employee?useSSL=false&allowPublicKeyRetrieval=true
+spring.datasource.username=root
+spring.datasource.password=ironport
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL5Dialect
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+server.port=8083
+# Show or not log for each sql query
+spring.jpa.show-sql = true
+
+# Hibernate ddl auto (create, create-drop, update): with "update" the database
+# schema will be automatically updated accordingly to java entities found in
+# the project
+spring.jpa.hibernate.ddl-auto = update
