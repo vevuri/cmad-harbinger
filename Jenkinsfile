@@ -43,8 +43,8 @@ pipeline {
 			steps{
 				echo 'Packaging users app with docker'
 				script{
-					docker.withRegistry('https://index.docker.io/v1/', 'dockerlogin') { 
-						def usersImage = docker.build("xxxx/users:v${env.BUILD_ID}", “.”)
+					docker.withRegistry('https://index.docker.io/v1/', 'dockervevuri') { 
+						def usersImage = docker.build("vevuri/cmad-harbinger:v${env.BUILD_ID}")
 						usersImage.push()
 						usersImage.push("latest")
 					 }
